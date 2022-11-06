@@ -9,33 +9,38 @@
     <link rel="stylesheet" href="Assets/style.css">
     <title>Portfolio</title>
 </head>
+
 <body>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 <section id="intro">
+
     <div class="Nav_Bar">
-        <h1 class="Logo">Parallax portfolio</h1>
-        <div >
+        <h1 class="Logo">Parallax <span>portfolio</span></h1>
+        <div class="Button_div">
             <a href="#about_me" class="Button_link">About me</a>
-            <a href="#contact_me" class="Button_link">Contact me</a>
-            <a href="#Message" class="Button_link">Message me</a>
+            <a href="#Message" class="Button_link">Contact me</a>
         </div>
     </div>
 
 
     <h1 class="name">Dmitrijs Semjonovs</h1>
+
 </section>
 
 <section id="about_me">
+
     <div class="container">
         <div class="content">
             <h3 class="title">
-                About me
+                About <span>me</span>
                 <div class="border" ></div>
             </h3>
 
             <p class="Text"> I'm Dmitrij <strong>Junnior WEB developer</strong> , in this moment alredy studying the Backend (Laravel / php), Frontend(Vue.js/js) .
-                Have a little experience working with these frameworks and with sql ,с#
+                Have a little experience working with these frameworks and with sql ,с#. All my projects/works you can find in github
             </p>
 
             <h2 class="Text">
@@ -50,62 +55,60 @@
                 <ion-icon name="logo-vue"></ion-icon>
             </div>
 
+            <h2 class="Findme_title">
+                Where find <span>me</span>
+                <div class="border" ></div>
+            </h2>
+
+            <div class="social_media">
+                <a href="https://www.facebook.com/profile.php?id=100013777301790" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+
+                <a href="https://www.instagram.com/_sapnu_puas_dd/" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+
+                <a href="https://github.com/TapeJIka" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=100013777301790" target="_blank">
+                    <ion-icon name="logo-discord"></ion-icon>
+                </a>
+            </div>
+
         </div>
         <div class="image_container">
             <img src="Assets/img/image.jpg">
         </div>
-    </div>
-</section>
-
-<section id="contact_me">
-    <div class="container">
-        <div class="content">
-            <h3 class="title">
-                You can find me here
-                <div class="border" ></div>
-            </h3>
-        </div>
-        <div class="social_media">
-            <a href="https://www.facebook.com/profile.php?id=100013777301790" target="_blank">
-                <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-
-            <a href="https://www.instagram.com/_sapnu_puas_dd/" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-
-            <a href="https://github.com/TapeJIka" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
-
-            <a href="https://www.facebook.com/profile.php?id=100013777301790" target="_blank">
-                <ion-icon name="logo-discord"></ion-icon>
-            </a>
-        </div>
 
 
     </div>
-
-
 </section>
 
-    <section id="Message">
-        <div class="container">
-            <div class="Contact_content">
-                <h3 class="Contact_title">
-                    But also you can leave your message here
-                    <div class="Contact_border" ></div>
-                </h3>
+<section id="Message">
 
-                <div class="Form_box">
-                    <form>
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname" placeholder="Fist Name">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="Contact_form">
+        <h1>Contact <span>me</span></h1>
+        <p>I'm available for freelance work. To connect with me you can leave your message here</p>
+
+        <form>
+            <input type="text" placeholder="Your First name" required>
+            <input type="text" placeholder="Last name" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea cols="30" rows="10" placeholder="Your Message" required>
+
+            </textarea>
+            <input type="submit" value="Submit" class="Submit_button">
+        </form>
+    </div>
+    
+    <div class="Contact_img">
+        <img src="Assets/img/iamge_2.jpg">
+    </div>
+
+</section>
 
 <script src="Assets/app.js"></script>
 </body>

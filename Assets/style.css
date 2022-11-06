@@ -28,12 +28,15 @@ body{
     justify-content: space-between;
 }
 
+.Button_div{
+    padding: 20px;
+}
 .Button_link{
     color: lightgrey;
-    font-size: medium;
+    font-size: 19px;
     margin-top: 20px;
-    padding-top: 15px;
-    padding-right: 10px;
+    padding-top:24px;
+    padding-left: 14px;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     transition: .5s;
@@ -49,6 +52,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
 }
+
 .name{
     font-family: 'Poppins',sans-serif;
     position: absolute;
@@ -73,18 +77,22 @@ body{
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     color: white;
-    background-color: #131723;
+    background-color: #101010;
     display: flex;
+    align-items: center;
+    margin-inline: auto;
     flex-wrap: wrap;
     flex-direction: column;
 }
+.container{
+    padding-top: 220px;
+}
 .content{
     gap: 40px;
-    padding: 40px;
     color: white;
+    padding: 40px 6%;
 }
 .title{
-    padding: 20px;
     font-size: 34px;
 }
 
@@ -94,7 +102,6 @@ body{
     background-color: white;
 }
 .Text{
-    padding: 20px;
     font-size: 20px;
 }
 #about_me > div{
@@ -104,10 +111,12 @@ body{
 }
 img{
     padding-top: 40px;
-    padding-right: 20px;
-    width: 500px;
+    padding-right: 220px;
+    width: 1000px;
 }
-.image_container{
+.image_container image{
+
+    display: flex;
     width: fit-content;
 }
 
@@ -131,29 +140,13 @@ ion-icon{
 ion-icon:hover{
     color: white;
 }
-/*.border{*/
-/*    position: absolute;*/
-/*    width: 0%;*/
-/*    height: 3px;*/
-/*    background-color: #fff;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*}*/
-
-
-#contact_me{
-    width: 100%;
-    height: 100vh;
-
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    background-color: #131723;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+.Findme_title{
+    padding-top: 80px;
+    font-size: 34px;
 }
 .social_media{
     display: flex;
+    padding-top: 20px;
     gap: 46px;
     flex-direction: row;
     width: fit-content;
@@ -163,7 +156,7 @@ ion-icon:hover{
     background-color: transparent;
 }
 .social_media > a{
-    color: grey;
+    color: #c2c2c2;
     transition: .5s;
     text-underline: none;
 }
@@ -171,65 +164,79 @@ ion-icon:hover{
     color: white;
 
 }
+
 #Message{
     width: 100%;
     height: 100vh;
+    color: white;
+    align-items: center;
+    background-color: #101010;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 6rem;
+}
 
+.Contact_form{
+    padding: 40px 15%;
+}
+.Contact_form h1 {
     font-family: 'Poppins', sans-serif;
-    color: white;
-    background-color: #131723;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-size: 30px;
-    margin-inline: auto;
+    font-size: 70px;
+    margin-bottom: 15px;
 }
-
-.Contact_content{
-    color: white;
-    width: 100%;
-    text-align: center;
-}
-.Contact_title{
-    padding: 30px;
- }
-.Contact_border{
-    width: 1000px;
-    height: 2px;
-    background-color: white;
-    margin-inline: auto;
-}
-
-
-/*Message box*/
-.Form_box {
-    display: inline-block;
-    color: white;
+.Contact_form p {
+    color: #c6c9d8bf;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    height: fit-content;
-    width: fit-content;
+    margin-bottom: 20px;
+}
+span{
+    color: cyan;
+}
+.Contact_form form{
+    position: relative;
+}
+.Contact_form form input, form textarea{
+    color: white;
+    width: 70%;
+    padding: 17px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background-color: #191919;
+    margin-bottom: 7px;
+}
+.Contact_form form textarea{
+    resize: none;
+    height: 190px;
+}
+
+.Contact_form form .Submit_button{
+    margin-top: 6px;
+    color: white;
+    background-color: rgba(0, 255, 255, 0.81);
     margin-inline: auto;
+    width: 30%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid  transparent;
+    transition: ease .20s;
+    cursor: pointer;
 }
 
-#fname{
-    width: 300px;
-    height: 35px;
-    padding: 10px;
-    margin:10px 0;
-    background-color: #3e4e56;
-    border: 1px solid  white;
-    border-radius: 5px;
-    appearance: none;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-    box-sizing:border-box;
+.Contact_form form .Submit_button:hover{
+    border: 2px solid rgba(0, 255, 255, 0.81);
+    background-color: transparent;
+    transform: scale(1.1);
 }
-#fname input{
-    border: 0;
+.Contact_img image{
+    max-width: 100%;
+    width: 720px;
+    height: auto;
 }
 
-#fname:hover{
-    border: 1px solid blueviolet;
 
-}
+
+
 
